@@ -46,7 +46,7 @@ const cars = [
     {
         marca: 'Dacia',
         modello: 'Duster',
-        alimentazione: 'benzina'
+        alimentazione: 'gpl'
     },
     {
         marca: 'Jeep',
@@ -84,6 +84,8 @@ console.log(diesel);
 
 const car = cars.filter(car => {
    if (car.alimentazione === 'elettrica'){
+    return true
+   } else if (car.alimentazione === 'gpl') {
     return true
    }
 });
