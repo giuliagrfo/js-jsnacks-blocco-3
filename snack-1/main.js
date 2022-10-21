@@ -80,12 +80,10 @@ const diesel = cars.filter(car => {
 });
 console.log(diesel);
 
-// nel terzo il resto delle auto
 
+// nel terzo il resto delle auto
 const car = cars.filter(car => {
-   if (car.alimentazione === 'elettrica'){
-    return true
-   } else if (car.alimentazione === 'gpl') {
+   if (car.alimentazione === 'elettrica' || car.alimentazione === 'gpl'){
     return true
    }
 });
