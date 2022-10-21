@@ -83,7 +83,7 @@ console.log(diesel);
 
 // nel terzo il resto delle auto
 const car = cars.filter(car => {
-   if (car.alimentazione === 'elettrica' || car.alimentazione === 'gpl'){
+   if (car.alimentazione != 'benzina' && car.alimentazione != 'diesel'){
     return true
    }
 });
